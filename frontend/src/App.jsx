@@ -8,7 +8,7 @@ export default function App() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch("http://localhost:8000/graph")
+    fetch("https://dodge-ai-assignment-production.up.railway.app/graph")
       .then(r => r.json())
       .then(data => {
         setGraphData(data)

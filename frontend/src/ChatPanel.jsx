@@ -20,7 +20,7 @@ export default function ChatPanel({ onHighlight }) {
     setLoading(true)
 
     try {
-      const res = await fetch("http://localhost:8000/query", {
+      const res = await fetch("https://dodge-ai-assignment-production.up.railway.app/query", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question })
